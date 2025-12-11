@@ -7,14 +7,18 @@ html, body {
     height: 100%;
 }
 
+
+
 body {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr 1fr auto;
     background-color:rgb(39, 39, 39);
     font-family: "Noto Sans", serif;
      
 
 }
+
+/**Navbar style**/
 
 .navbar{
     display: flex;
@@ -24,8 +28,6 @@ body {
     padding:20px;
     
    
-    
-    
 
 }
 
@@ -58,6 +60,18 @@ nav li a:hover {
     color: white;
 }
 
+/**Footer Style**/
+footer{
+    background-color: rgba(0, 0, 0, 0.378);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 8px;
+}
+
+
+/**Home page Main style**/
+
 .home {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -70,33 +84,46 @@ nav li a:hover {
 .home-col-1, .home-col-2 {
     background-color:rgba(0, 0, 0, 0.378);;
     display: grid;
-    padding:20px;
+    padding: 20px;;
     place-items: center;
-    text-align: center;
+    
     
 }
-
-
-
-
 
 
 .home-col-1 h2 {   
     color: red;
     font-size: 30px;
-    padding:10px;   
+    padding-bottom: 10px; 
+    text-align: center;
+    width:100%
 }
 
 .home-col-1 h3 {
     color: white;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    width: 75%;
+}
+
+.home-col-1 ul {
+    width:50%;
+    
+}
+
+.home-col-1  ul li {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    
+    
 }
 
 
 
 .home-col-2 img {
-    width: 600px;
+    width: 400px;
     height: auto;
 }
 
@@ -116,13 +143,87 @@ nav li a:hover {
     background-color: black;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.378);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 8px;
+/**Machine Page Styling**/
+
+
+.machine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 30px;
+
 }
+
+.machine-col-1-row-1, .machine-col-2-row-1 {
+    background-color:rgba(0, 0, 0, 0.378);;
+    display: grid;
+    padding: 20px;;
+    place-items: center;
+    
+    
+}
+
+
+.machine-col-1-row-1 h2 {   
+    color: red;
+    font-size: 30px;
+    padding-bottom: 10px; 
+    text-align: center;
+    width:100%
+}
+
+.machine-col-1-row-1 h3 {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    width: 75%;
+    padding-bottom: 10px; 
+}
+
+.machine-col-1-row-1 p {
+    color: white;
+    text-align: left;
+    padding: 20px 10px;
+    
+    
+}
+
+.machine-col-1-row-1 ul {
+    width:50%;
+    
+}
+
+.machine-col-1-row-1  ul li {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    
+    
+}
+
+
+
+.machine-col-2-row-1 img {
+    width: 400px;
+    height: auto;
+}
+
+.manual{
+    background-color: rgba(0, 0, 0, 0.378);
+    height: 500px;
+    padding: 20px;
+    
+}
+
+.manual iframe {
+    width: 100%;
+    height: 100%;
+      
+}
+
+
 
 
 
