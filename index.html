@@ -5,43 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singer Electric Sewing Machine</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
+
+    <header class="navbar">
+        
         <img src="images/logo.png" alt="Singer Logo" class="logo">
-        
-       
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="about.html">About Us</a></li>
 
+        <nav>
+                   
+            <ul> <!---Adding ul for navbar links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="machine.html">Our Machine</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About Us</a></li>
 
+            </ul>
 
-        </ul>
-        
-     
-
-    </div>
+        </nav>
+    </header>
 
     
-    <main>
-        <div class="home">
+   <main>
+        <section class="home">  <!--creating two seperate divs in home container in order to style as 2 grid columns in css-->
 
-            <div>
-                <h2>New: The Singer Automatic Model 24 </h2>
-                <h3></h3>
-                <p></p>
-            </div>
+            <article class="home-col-1">
+                <h2>Singer Automatic Model 24</h2>
+                <h3>The Latest and Best</h3>
+                <a href="machine.html" class="learn-more-btn">Learn More</a>
+            </article>
+                
+            <article>
+                <img src="images/product-img-2.jpg" alt="Singer Automatic Model 24" class="singer-ad">
+            </article>
+            <!--Image source: https://globalsew.com/museum-machine/singer-model-24-series-automatic-black-industrial-imca-global-musuem/-->
             
-            <div><img src="images/machine.jpg" alt="Singer Automatic Model 24" class="singer-ad"></div>
+        </section>
+        
+   </main>
+
+   <footer>
+
+   </footer>
     
-        </div>
-    </main>
 
 </body>
+
 </html>
