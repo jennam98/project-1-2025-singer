@@ -3,8 +3,15 @@
     padding:0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color:rgb(39, 39, 39);
+    font-family: "Noto Sans", serif;
      
 
 }
@@ -14,7 +21,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     background-color: rgba(0, 0, 0, 0.378);
-    position: sticky;
     padding:20px;
     
    
@@ -26,58 +32,47 @@ body {
 
 
 .logo {
-    width: 200px; 
-    display: block; 
-    
-
-    
+    width: 200px;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style: none;
 }
 
-li {
-    margin-right:30px;
-    border: 1px;
-
-    
-   
+nav li {
+    margin-right:30px 
 
 }
 
-li a {
-    margin-left:20px;
+nav li a {
+    /**margin-left:20px;**/
     text-decoration: none;
     color: rgb(255, 0, 0);
     font-size: 18px;
-    font-family: "Noto Sans", sans-serif;
+    
 
 }
 
-ul li a:hover {
+nav li a:hover {
     color: white;
 }
 
 .home {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 20px;
     gap: 30px;
-    margin: 10px;
-
-   
-    
 
 }
 
-.home div {
+.home-col-1, .home-col-2 {
     background-color:rgba(0, 0, 0, 0.378);;
+    display: grid;
     padding:20px;
-    place-content: center;
     place-items: center;
+    text-align: center;
     
 }
 
@@ -85,26 +80,22 @@ ul li a:hover {
 
 
 
-.home div h2 {
-    
-   
+
+.home-col-1 h2 {   
     color: red;
     font-size: 30px;
-    font-family:"Noto Sans", sans-serif;
-    padding:10px;
-    
+    padding:10px;   
 }
 
-.home div h3 {
+.home-col-1 h3 {
     color: white;
-    font-size: 20px;
-    font-family:"Noto Sans", sans-serif; 
+    font-size: 30px;
     padding: 10px;
 }
 
 
 
-.home div img {
+.home-col-2 img {
     width: 600px;
     height: auto;
 }
@@ -118,8 +109,7 @@ ul li a:hover {
     display: block;
     margin: 20px;
     font-family:"Noto Sans", sans-serif; 
-    
-  
+     
 }
 
 .learn-more-btn:hover{
@@ -129,7 +119,9 @@ ul li a:hover {
 footer{
     background-color: rgba(0, 0, 0, 0.378);
     color: white;
-    
+    text-align: center;
+    padding: 20px 0;
+    font-size: 8px;
 }
 
 
