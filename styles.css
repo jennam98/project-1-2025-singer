@@ -31,6 +31,12 @@ body {
 
 }
 
+nav a.current,
+nav > ul > li > a:has(+ ul a.current) {
+	color: white;
+	font-weight: bold;
+}
+
 
 
 .logo {
@@ -61,7 +67,8 @@ nav li a:hover {
 }
 
 /**Footer Style**/
-footer{
+
+footer {
     background-color: rgba(0, 0, 0, 0.378);
     color: white;
     text-align: center;
@@ -69,8 +76,14 @@ footer{
     font-size: 8px;
 }
 
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 8px;
+}
 
 
+/**Container Style**/
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +99,7 @@ footer{
     display: grid;
     padding: 20px;;
     place-items: center;
+    border-radius: 5px;
     
     
 }
@@ -128,11 +142,13 @@ p {
 }
 
 
-
+/**index page image**/
 .singer-ad img {
     width: 500px;
     height: auto;
 }
+
+
 
 .learn-more-btn{
     background-color: red;
@@ -152,7 +168,13 @@ p {
     background-color: black;
 }
 
+/**Our machine page images**/
 
+.product-img img {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+}
 
 .manual{
     background-color: rgba(0, 0, 0, 0.378);
@@ -166,6 +188,76 @@ p {
     height: 100%;
       
 }
+
+
+/**Review styling**/
+
+.review {   /**Using flex for review page to make it easier since i want 1 column**/
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.378);
+    width: 75%;
+    margin: 40px auto;
+    padding:40px;
+    border-radius: 5px;
+}
+
+.review-stars {
+    display: flex;
+    gap: 10px;
+    padding:20px;
+}
+
+.star {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+
+.star:hover {   /**Star turns red when hovering over**/            
+    transform: scale(1.2);
+    color: red;
+}
+
+.star.one,          /**starts turn red when when selecting star rating**/
+.star.two,
+.star.three,
+.star.four,
+.star.five {
+    color: red;
+}
+
+
+.comment {
+    width:75%;
+    height:100px;
+    padding:20px;
+    background-color:rgb(39, 39, 39);
+    border-radius: 5px;
+    color:white;
+}
+
+.review-btn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    font-family:"Noto Sans", sans-serif; 
+     
+}
+
+
+
+.review-btn:hover{
+    background-color: black;
+}
+
 
 
 

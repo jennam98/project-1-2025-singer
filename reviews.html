@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -28,6 +29,36 @@
 
         </nav>
     </header>
+
+    <main>
+
+
+        <div class="review">
+        
+            <h2>Leave a Review:</h2>
+            <div class="review-stars">  <!--Inspiration taken from: https://www.geeksforgeeks.org/javascript/star-rating-using-html-css-and-javascript/-->
+                    
+                    <span onclick="rating(1)" class="star">★</span>
+                    <span onclick="rating(2)" class="star">★</span>
+                    <span onclick="rating(3)" class="star">★</span>
+                    <span onclick="rating(4)" class="star">★</span>
+                    <span onclick="rating(5)" class="star">★</span>
+                    <h3 id="output">Rating: 0/5</h3>
+
+            </div>
+
+            <textarea id="comment" class="comment" placeholder="Write your review here...">
+
+            </textarea>
+
+            <button class="review-btn" onclick="submitReview()">Submit</button>
+
+        </div>
+      
+
+
+
+    </main>
 
 
    <footer>
