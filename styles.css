@@ -238,6 +238,7 @@ p {
     background-color:rgb(39, 39, 39);
     border-radius: 5px;
     color:white;
+    border-color: red;
 }
 
 .review-btn{
@@ -259,6 +260,70 @@ p {
 }
 
 
+/**Contact page style**/
+
+.singer-building img {
+    width: 400px;
+    padding:10px;
+
+}
+
+.singer-building p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.contact {
+    padding: 5px;
+}
+
+
+.contact-form {
+    padding: 10px;
+    width: 75%;
+    
+    
+   
+}
+
+.contact-form label {
+    color: white;
+    font-family: "Noto Sans", serif;
+    margin-bottom: 10px;
+    
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid red;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 20px;
+
+  
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+
+.submit {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    display: block;
+    
+}
+
+/* Hover effect */
+.submit:hover {
+    background-color: black;
+}
 
 
 
