@@ -1,5 +1,5 @@
 *{
-    margin:0;       /**removes default spacing **/
+    margin:0;       
     padding:0;
 }
 
@@ -9,7 +9,7 @@ html, body {
 
 
 
-body {
+body {              /*setting up grid rows, used for all pages except review page*/
     display: grid;
     grid-template-rows: auto 1fr 1fr auto;
     background-color:rgb(39, 39, 39);
@@ -86,7 +86,7 @@ footer p {
 /**Container Style**/
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /*adding grid coloumn*/
     justify-content: space-evenly;
     padding: 20px;
     gap: 30px;
@@ -104,7 +104,7 @@ footer p {
     
 }
 
-
+/**text styling**/
 h2 {   
     color: red;
     font-size: 30px;
@@ -150,7 +150,7 @@ p {
 }
 
 
-
+/**index button**/
 .learn-more-btn{
     background-color: red;
     color: white;
@@ -165,7 +165,7 @@ p {
 
 
 
-.learn-more-btn:hover{
+.learn-more-btn:hover{   /*buttom turns black on hover, used for all buttons on site*/
     background-color: black;
 }
 
@@ -177,6 +177,8 @@ p {
     padding: 10px;
 }
 
+/**manual**/
+
 .manual{
     background-color: rgba(0, 0, 0, 0.378);
     height: 500px;
@@ -184,11 +186,14 @@ p {
     
 }
 
-.manual iframe {
+
+
+.manual iframe {  /*adding 100% width and height to iframe fits to container*/
     width: 100%;
     height: 100%;
       
 }
+
 
 
 /**Review styling**/
@@ -213,7 +218,7 @@ p {
 .star {
     font-size: 20px;
     color: white;
-    cursor: pointer;
+    
     
     
 }
@@ -231,7 +236,7 @@ p {
     color: red;
 }
 
-
+/**comment box styling**/
 .comment {
     width:75%;
     height:100px;
@@ -242,6 +247,7 @@ p {
     border-color: red;
 }
 
+/**review submission button**/
 .review-btn{
     background-color: red;
     color: white;
@@ -287,6 +293,8 @@ p {
    
 }
 
+
+
 .contact-form label {
     color: white;
     font-family: "Noto Sans", serif;
@@ -301,14 +309,12 @@ p {
     border-radius: 5px;
     padding:10px;
     margin-bottom: 20px;
-
-  
     color: white;
     font-family: "Noto Sans", sans-serif;
     font-size: 14px;
 }
 
-
+/**contact page submit button**/
 .submit {
     background-color: red;
     color: white;
@@ -321,10 +327,12 @@ p {
     
 }
 
-/* Hover effect */
+
 .submit:hover {
     background-color: black;
 }
+
+/**about page styling**/
 
 .about p {
     padding: 10px;

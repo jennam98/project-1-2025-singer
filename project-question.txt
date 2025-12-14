@@ -1,0 +1,16 @@
+I was wondering if using grid or flexbox is best practise? Or if it is case by case.
+
+Also, I was wondering if I am overusing <div> rather than just using <article> or <aside> tags where possible? 
+Through the process, I felt like I might be overcomplicating it by overusing <div> tags.
+
+If you have any good resources on making styling look more professional, I'd really like to take a look.
+I found when using the grid, since i wanted both columns to be the same size, alot of the spacing looks bad, I could 
+not figure out how to make it look nicer.
+
+I'd really appreicate your feed back if you have time!
+
+Thank you for a great semester!
+
+Best wishes, 
+
+Jenna

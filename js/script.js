@@ -1,6 +1,6 @@
 
 
-
+//used my lab e for reference
 const pageURL = window.location.href;
 const navLinks = document.querySelectorAll('nav > ul > li > a');
 let linkURL;
